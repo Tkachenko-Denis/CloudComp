@@ -1,0 +1,18 @@
+#cloud-config
+datasource:
+  Ec2:
+    strict_id: false
+
+ssh_pwauth: no
+
+users:
+  - name: ${username}
+    groups: sudo
+    shell: /bin/bash
+    sudo: "ALL=(ALL) NOPASSWD:ALL"
+    ssh_authorized_keys:
+      - "${ssh_key}"
+
+runcmd:
+  - curl -fsSL https://code-server.dev/install.sh | sh
+  - systemctl enable --now code-server@${username}
