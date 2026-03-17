@@ -381,7 +381,7 @@ yandex_compute_instance.this: Still creating... [00m10s elapsed]
 yandex_compute_instance.this: Still creating... [00m20s elapsed]
 yandex_compute_instance.this: Still creating... [00m30s elapsed]
 yandex_compute_instance.this: Still creating... [00m40s elapsed]
-yandex_compute_instance.this: Creation complete after 43s [id=fhmoeastp7ni8sejf2fr]
+yandex_compute_instance.this: Creation complete after 43s [id=redacted-instance-id]
 
 Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
 
